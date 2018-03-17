@@ -82,3 +82,5 @@ c:\users\sachin\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidl
 c:\users\sachin\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache
 c:\users\sachin\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.InitialModel.resources
 c:\users\sachin\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.Cache
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddIsSubscribedtoCustomer.resources
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
