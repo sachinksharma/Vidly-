@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Data.Entity;
+using System.Linq;
 using System.Web.Mvc;
 using Vidly.Models;
 
@@ -6,6 +7,13 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
+        public ApplicationDbContext _context;
+
+        public MoviesController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
         // GET: Movies
         public ActionResult Random()
         {
@@ -23,21 +31,16 @@ namespace Vidly.Controllers
             return Content($"Year is {year} and month is {month}");
         }
 
+        public ActionResult Details(int id)
+        {
+            var movie = _context.Movies.FirstOrDefault(c => c.Id == id);
+            return View(movie);
+        }
+
         public ActionResult Index(int? pageIndex, string sortBy)
         {
-            pageIndex = pageIndex ?? 1;
-            sortBy = !(string.IsNullOrWhiteSpace(sortBy)) ? sortBy : "Name";
-
-
-            var customers = new List<Customer>
-            {
-                new Customer(){Name = "Mark"},
-                new Customer(){Name="Brian"}
-            };
-
-
-
-            return View(customers);
+            var movies = _context.Movies.Include(c => c.Genre).ToList();
+            return View(movies);
         }
 
     }

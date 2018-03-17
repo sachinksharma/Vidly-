@@ -79,8 +79,15 @@ c:\users\sachin\documents\visual studio 2015\Projects\Vidly\Vidly\bin\Microsoft.
 c:\users\sachin\documents\visual studio 2015\Projects\Vidly\Vidly\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 c:\users\sachin\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.dll
 c:\users\sachin\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.pdb
-c:\users\sachin\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache
 c:\users\sachin\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.InitialModel.resources
 c:\users\sachin\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.Cache
 C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddIsSubscribedtoCustomer.resources
 C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypeClass.resources
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.applyannotationtocustomername.resources
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.addednametomembership.resources
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.Updaterecordinmembershiptype.resources
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDOBtoCustomer.resources
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.GenreAddedToMovies.resources
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.addingGenreRecords.resources
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache
