@@ -90,4 +90,3 @@ C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidl
 C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDOBtoCustomer.resources
 C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.GenreAddedToMovies.resources
 C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.addingGenreRecords.resources
-C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache

@@ -1,7 +1,9 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
 using Vidly.Models;
+using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
@@ -23,12 +25,19 @@ namespace Vidly.Controllers
 
         public ActionResult Edit(int id)
         {
-            return Content("Id=" + id);
-        }
+            var movie = _context.Movies.Single(c => c.Id == id);
+            if (movie != null)
+            {
+                var movieModel = new MovieFormViewModel()
+                {
+                    Genres = _context.Genres.ToList(),
+                    Movie = movie
+                };
 
-        public ActionResult ByReleaseDate(int year, int month)
-        {
-            return Content($"Year is {year} and month is {month}");
+                return View("MovieForm", movieModel);
+            }
+            else
+                return HttpNotFound();
         }
 
         public ActionResult Details(int id)
@@ -37,11 +46,42 @@ namespace Vidly.Controllers
             return View(movie);
         }
 
-        public ActionResult Index(int? pageIndex, string sortBy)
+        public ActionResult Index()
         {
             var movies = _context.Movies.Include(c => c.Genre).ToList();
             return View(movies);
         }
+        [HttpGet]
+        public ActionResult Create()
+        {
+            var genres = _context.Genres.ToList();
 
+            var viewmodel = new MovieFormViewModel()
+            {
+                Genres = genres
+            };
+            return View("MovieForm", viewmodel);
+        }
+
+        [HttpPost]
+        public ActionResult Create(Movie movie)
+        {
+            // In case of addition of new movie
+            if (movie.Id == 0)
+            {
+                movie.DateAdded = DateTime.Today;
+                _context.Movies.Add(movie);
+            }
+            else
+            {
+                var existingmovie = _context.Movies.Single(c => c.Id == movie.Id);
+                existingmovie.GenreId = movie.GenreId;
+                existingmovie.Name = movie.Name;
+                existingmovie.NumberInStock = movie.NumberInStock;
+                existingmovie.ReleaseDate = movie.ReleaseDate;
+            }
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Movies");
+        }
     }
 }

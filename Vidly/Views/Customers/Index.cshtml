@@ -5,8 +5,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Customers</h2>
+<br/>
+<p>
+    @Html.ActionLink("New Customer", "Create", "Customers", new { @class = "btn btn-primary" })
+</p>
+
+
 <table class="table">
+   
     <tr>
         <th>Customer</th>
         <th>Membership Type</th>
@@ -14,16 +20,17 @@
 
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.ActionLink(@item.Name, "Edit", "Customers", new { id = @item.Id },null)
-        </td>
-        <td>
-            @item.MembershipType.Name   </td>
-        <td>
-           @item.MembershipType.DiscountRate%
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(@item.Name, "Edit", "Customers", new {id = @item.Id}, null)
+            </td>
+            <td>
+                @item.MembershipType.Name </td>
+            <td>
+                @item.MembershipType.DiscountRate%
+            </td>
+        </tr>
+    }
 </table>
