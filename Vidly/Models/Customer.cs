@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Vidly.Validation;
 
 namespace Vidly.Models
 {
@@ -14,6 +15,7 @@ namespace Vidly.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:d}")]
         [Display(Name = "Date of Birth")]
+        [CheckMembershipAge]
         public DateTime DateOfBirth { get; set; }
 
         public bool IsSubscribledToNewsLetter { get; set; }

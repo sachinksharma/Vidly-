@@ -41,6 +41,19 @@ namespace Vidly.Controllers
         [HttpPost]
         public ActionResult Create(Customer customer)
         {
+            // check if the model is valid or not
+
+            if (!ModelState.IsValid)
+            {
+                var viewmodel = new CustomerFormViewModel()
+                {
+                    Customer = customer,
+                    MembershipTypes = _context.MembershipTypes.ToList()
+                };
+
+                return View("CustomerForm", viewmodel);
+            }
+
             if (customer.Id == 0)
                 _context.Customers.Add(customer);
             else

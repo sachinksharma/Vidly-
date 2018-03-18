@@ -66,6 +66,18 @@ namespace Vidly.Controllers
         [HttpPost]
         public ActionResult Create(Movie movie)
         {
+            //  Check if Model content is valid
+            if (!ModelState.IsValid)
+            {
+                var viewmodel = new MovieFormViewModel()
+                {
+                    Movie = movie,
+                    Genres = _context.Genres.ToList()
+                };
+
+                return View("MovieForm", viewmodel);
+            }
+
             // In case of addition of new movie
             if (movie.Id == 0)
             {
@@ -73,7 +85,7 @@ namespace Vidly.Controllers
                 _context.Movies.Add(movie);
             }
             else
-            {
+            {   // In case of update 
                 var existingmovie = _context.Movies.Single(c => c.Id == movie.Id);
                 existingmovie.GenreId = movie.GenreId;
                 existingmovie.Name = movie.Name;
