@@ -41,8 +41,10 @@
             @Html.ValidationMessageFor(m => m.Customer.IsSubscribledToNewsLetter)
         </label>
     </div>
+    if (Model.Customer != null) { @Html.HiddenFor(m => m.Customer.Id)}
+
     @Html.AntiForgeryToken()
-    @Html.HiddenFor(m => m.Customer.Id)
+   
     <button type="submit" class="btn btn-primary">Save</button>
 }
 

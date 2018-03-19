@@ -64,7 +64,6 @@ namespace Vidly.Controllers
                 existingcustomer.IsSubscribledToNewsLetter = customer.IsSubscribledToNewsLetter;
                 existingcustomer.MemberShipTypeId = customer.MemberShipTypeId;
             }
-
             _context.SaveChanges();
             return RedirectToAction("Index", "Customers");
         }
