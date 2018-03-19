@@ -90,3 +90,10 @@ C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidl
 C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDOBtoCustomer.resources
 C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.GenreAddedToMovies.resources
 C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.addingGenreRecords.resources
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\bin\System.Web.Http.dll
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\bin\System.Web.Http.xml
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache
