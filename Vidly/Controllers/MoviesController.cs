@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
 using Vidly.Models;
@@ -7,6 +6,7 @@ using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
+    [Authorize]
     public class MoviesController : Controller
     {
         public ApplicationDbContext _context;
@@ -48,9 +48,13 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            var movies = _context.Movies.Include(c => c.Genre).ToList();
-            return View(movies);
+            if (User.IsInRole("CanManageMovies"))
+                return View("List");
+            else
+
+                return View("ReadOnlyList");
         }
+
         [HttpGet]
         public ActionResult Create()
         {

@@ -96,4 +96,6 @@ C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidl
 C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.Cache
 C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.pdb
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources
+C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.addDrivingLicense.resources
 C:\Users\Sachin\Documents\Visual Studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache

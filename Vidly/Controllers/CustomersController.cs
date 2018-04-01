@@ -5,6 +5,7 @@ using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
+    [Authorize]
     public class CustomersController : Controller
     {
         private ApplicationDbContext _context;
@@ -25,7 +26,11 @@ namespace Vidly.Controllers
             // var customers = _context.Customers.Include(c => c.MembershipType).ToList();
 
             // return View(customers);
-            return View();
+            if (User.IsInRole("CanManageMovies"))
+                return View("List");
+            else
+
+                return View("ReadOnlyList");
         }
 
         public ActionResult Details(int id)
